@@ -320,6 +320,22 @@ export default function ShopPage() {
         </div>
       </section>
 
+      {/* Footer */}
+      <footer className="border-t border-green-100 dark:border-green-900 mt-16">
+        <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400 gap-2">
+          <span>&copy; {new Date().getFullYear()} 2nd-brain Shop. All rights reserved.</span>
+          <div className="flex gap-4">
+            <Link href="https://www.2nd-brain.app/terms" className="hover:underline" target="_blank" rel="noopener noreferrer">
+              Terms of Service
+            </Link>
+            <Link href="https://www.2nd-brain.app/privacy" className="hover:underline" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
+      </footer>
+
+
       {/* Purchase Info Dialog */}
       <Dialog open={isPurchaseDialogOpen} onOpenChange={setIsPurchaseDialogOpen}>
         <DialogContent className="sm:max-w-md">
@@ -362,4 +378,6 @@ export default function ShopPage() {
       <OrderStatusDialog open={isStatusDialogOpen} onOpenChange={setIsStatusDialogOpen} />
     </div>
   )
+      
+
 }
