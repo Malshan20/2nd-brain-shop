@@ -125,7 +125,7 @@ export function OrderStatusDialog({ open, onOpenChange }: OrderStatusDialogProps
             <div className="p-3 bg-green-50 border border-green-200 rounded-md space-y-3">
               <p className="text-green-800 font-medium">Paid</p>
               <p className="text-green-600 text-sm">Your order is complete! Download your PDF:</p>
-              <Link href="/digital-planner.zip" download="digital-planner.zip" target="_blank">
+              <Link href="https://drive.google.com/file/d/1FfCpCFZgl1CgNoIpxVPzx5r2MMuc-x6M/view?usp=sharing" target="_blank">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
                   <Download className="w-4 h-4 mr-2" />
                   Download Digital Planner
